@@ -1,0 +1,126 @@
+/* Navbar CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003399;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+}
+
+nav p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu Hamburger */
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu span {
+    background: white;
+    border-radius: 2px;
+    height: 3px;
+    margin: 3px 0;
+    width: 25px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animasi Hamburger */
+.menu.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu.open span:nth-child(4) {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.menu.open span:nth-child(5) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Menu Items */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #003399;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    nav ul.open {
+        display: flex;
+        max-height: 500px; /* Adjust based on menu height */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
