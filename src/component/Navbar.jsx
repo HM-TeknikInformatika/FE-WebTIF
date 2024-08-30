@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import "./Navbar.css"
 import { Link, NavLink } from "react-router-dom";
 
@@ -7,16 +8,14 @@ export const Navbar = () => {
 
 
     return (
-        <nav>
+            <nav className="">
             <Link to="/">
                 <a href="">
-                    <img src="" alt="Logo" />
+                    <img src="./src/assets/img/Logo.png" alt="Logo" />
                     <p>HM TIF <br /> UNISSULA</p>
                 </a>
             </Link>
-            <div className="menu" onClick={() => {setMenuOpen(!menuOpen);}}>
-                <span></span>
-                <span></span>
+            <div className="menu" onClick={() => { setMenuOpen(!menuOpen); }}>
                 <span></span>
                 <span></span>
                 <span></span>

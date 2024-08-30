@@ -5,18 +5,23 @@ nav {
     align-items: center;
     background-color: #003399;
     padding: 0.75rem 1.5rem;
-    position: relative;
+    position: sticky; /* Ganti position menjadi sticky */
+    top: 0; /* Menempel di bagian atas halaman */
+    z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
 }
 
+/* Sticky navbar akan tetap berada di atas halaman ketika scroll */
 nav a {
     text-decoration: none;
     color: white;
     display: flex;
+    /* margin-left: 2rem; */
 }
 
 nav img {
     height: 40px;
     width: auto;
+    margin-left: 5.5rem;
 }
 
 nav p {
@@ -70,7 +75,10 @@ nav p {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 5.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -94,6 +102,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .menu {
         display: flex;
+    }
+
+    nav img {
+        margin: 0;
     }
 
     nav ul {

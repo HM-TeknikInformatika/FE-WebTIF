@@ -1,12 +1,40 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
+import heroImage1 from '/src/assets/img/Hero1.jpeg';
+import heroImage2 from '/src/assets/img/Hero2.jpeg';
+import heroImage3 from '/src/assets/img/Hero3.jpeg';
+import "/src/App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const Beranda = () => {
     return (
-        <div>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
-            </div>
-            <br />
+        <div className="homepage">
+            <header className="header-box">
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage1}
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage2}
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage3}
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+            </header>
         </div>
     );
 };
