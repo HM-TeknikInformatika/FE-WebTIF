@@ -49,3 +49,105 @@ body{
       border-radius: 0;
   }
 }
+
+
+
+/* Styling untuk Desc-Item */
+.Desc-Item {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Styling untuk gambar */
+.Desc-Item img {
+  max-width: 25%; /* Ukuran gambar */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk judul */
+.Desc-Item h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+/* Styling untuk paragraf */
+.Desc-Item p {
+  font-size: 1.3rem;
+  /* color: #7f8c8d; */
+  line-height: 1.6;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+  .Desc-Item {
+      padding: 20px;
+  }
+
+  .Desc-Item h1 {
+      font-size: 1.8rem;
+  }
+
+  .Desc-Item p {
+      font-size: 0.95rem;
+  }
+}
+
+
+/* Styling untuk Desc-SocialMedia */
+.Desc-SocialMedia {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #003399;
+  border-radius: 25px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styling untuk judul h1 */
+.Desc-SocialMedia h1 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Styling untuk tombol */
+.Desc-SocialMedia button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #003399;
+  background-color: #fffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+/* Hover effect untuk tombol */
+.Desc-SocialMedia button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+  .Desc-SocialMedia h1 {
+      font-size: 0.95rem;
+      margin-top: 15px;
+      font-weight: normal;
+  }
+
+  .Desc-SocialMedia button {
+      font-size: 0.7rem;
+      padding: 8px 16px;
+      margin-bottom: 15px;
+  }
+}

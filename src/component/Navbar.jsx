@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import "./Navbar.css"
 import { Link, NavLink } from "react-router-dom";
+import iconImage from "/public/assets/img/Logo.png"
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -11,7 +11,7 @@ export const Navbar = () => {
             <nav className="">
             <Link to="/">
                 <a href="">
-                    <img src="./src/assets/img/Logo.png" alt="Logo" />
+                    <img src={iconImage} alt="Logo" />
                     <p>HM TIF <br /> UNISSULA</p>
                 </a>
             </Link>
