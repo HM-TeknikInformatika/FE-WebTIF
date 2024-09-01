@@ -7,6 +7,7 @@ import iconImage from "/public/assets/img/Logo.png";
 import "/src/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Proker } from "../proker";
 
 
 export const Beranda = () => {
@@ -52,6 +53,10 @@ export const Beranda = () => {
                 <h1 className="container">Tetap terhubung platform sosial media kami. Lihat postingan terbaru, berikan umpan balik, dan jadilah bagian dari komunitas kami.</h1>
                 <button>Lihat Selengkapnya <FaArrowUpRightFromSquare /></button>
             </div>
+
+
+
+            <div><Proker /></div>
 
         </div>
     );
