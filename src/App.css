@@ -146,11 +146,155 @@ body{
 
   .Desc-SocialMedia button {
       font-size: 0.7rem;
-      padding: 8px 16px;
+      padding: 8px 25px;
       margin-bottom: 15px;
   }
 }
 
+.struktur{
+  border-bottom: 10px solid #003399;
+  border-radius: 25px;
+}
+
+
+.struktur-kepengurusan {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.struktur-kepengurusan h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  /* text-align: center; */
+}
+
+/* Styling untuk tombol */
+.struktur-kepengurusan .all-profile button {
+  font-size: 1rem;
+  padding: 7px 40px;
+  color: #003399;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+  border: 1px solid #003399;
+  position: absolute; /* Ubah posisi button menjadi absolute */
+  right: 100px; /* Posisikan button 20px dari kanan container */
+}
+
+/* Hover effect untuk tombol */
+.struktur-kepengurusan button:hover {
+  background-color: #e8e8e8;
+}
+
+
+/* Container for profile description */
+.desc-struktur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #003399;
+  margin: 20px; /* Menambahkan jarak antar item */
+}
+
+
+/* Image styling */
+.desc-struktur img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Name styling */
+.desc-struktur h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Job title styling */
+.desc-struktur .job {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* Button styling */
+.desc-struktur button {
+  width: 180px; /* Menentukan lebar tombol */
+  height: 35px; /* Menentukan tinggi tombol */
+  font-size: 0.875rem; /* Mengurangi ukuran font */
+  color: #003399;
+  background-color: white;
+  border: 2px solid #003399; /* Menambahkan border (stroke) */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  /* font-weight: bold; */
+}
+
+.desc-struktur button:hover {
+  background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .struktur-kepengurusan h1 {
+    font-size: 1.75rem;
+  }
+  .struktur-kepengurusan .all-profile button {
+    font-size: 0.7rem;
+    padding: 8px 25px;
+    margin-bottom: 15px;
+  }
+
+  .struktur-kepengurusan button {
+    font-size: 0.7rem;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+}
+
+  .desc-struktur {
+    padding-top: 15px;
+    margin: 15px; /* Kurangi margin untuk layar lebih kecil */
+  }
+
+  .desc-struktur img {
+    width: 120px; /* Ukuran gambar lebih kecil di layar tablet */
+    height: 120px;
+    margin-bottom: 2px;
+  }
+
+  .desc-struktur h1 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .desc-struktur .job {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .desc-struktur button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
 
 /* Styling untuk container program-kerja */
 .program-kerja {
@@ -256,4 +400,13 @@ body{
       font-size: 0.9rem;
       padding: 8px 16px;
   }
+
+  .program-kerja .card img {
+    width: 243px; /* Mengatur lebar gambar */
+    height: 210px; /* Mengatur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak rasio aspek */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
 }

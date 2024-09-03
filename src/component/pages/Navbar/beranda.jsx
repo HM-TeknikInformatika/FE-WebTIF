@@ -7,7 +7,8 @@ import iconImage from "/public/assets/img/Logo.png";
 import "/src/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { Proker } from "../proker";
+import { Proker } from "../../proker";
+import { Structure } from "../../structure";
 
 
 export const Beranda = () => {
@@ -54,8 +55,7 @@ export const Beranda = () => {
                 <button>Lihat Selengkapnya <FaArrowUpRightFromSquare /></button>
             </div>
 
-
-
+            <div><Structure /></div>
             <div><Proker /></div>
 
         </div>
