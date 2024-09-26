@@ -18,12 +18,10 @@ body{
 
 /* Header styling */
 .header-box {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh; /* Adjust height as needed */
-  background-color: #f0f0f0; /* Optional background color */
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -49,6 +47,8 @@ body{
       border-radius: 0;
   }
 }
+
+
 
 
 /* Styling untuk Desc-Item */
@@ -95,6 +95,12 @@ body{
 
   .Desc-Item p {
       font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Desc-Item {
+    margin-top: -100px;
   }
 }
 
@@ -256,10 +262,10 @@ body{
 /* Responsive Design */
 @media (max-width: 768px) {
   .struktur-kepengurusan h1 {
-    font-size: 1.75rem;
+    font-size: 20px;
   }
-  .struktur-kepengurusan .all-profile button {
-    font-size: 0.7rem;
+  .struktur-kepengurusan .all-profile {
+    font-size: 0.6rem;
     padding: 8px 25px;
     margin-bottom: 15px;
   }
@@ -275,6 +281,7 @@ body{
     margin: 15px; /* Kurangi margin untuk layar lebih kecil */
   }
 
+
   .desc-struktur img {
     width: 120px; /* Ukuran gambar lebih kecil di layar tablet */
     height: 120px;
@@ -282,20 +289,69 @@ body{
   }
 
   .desc-struktur h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 8px;
   }
 
   .desc-struktur .job {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin-bottom: 10px;
   }
 
   .desc-struktur a {
     padding: 8px 16px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
+
+/* Styling responsif untuk layar dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+  .struktur-kepengurusan h1 {
+    font-size: 20px; /* Mengurangi ukuran font judul */
+  }
+
+  /* Styling untuk tombol */
+  .struktur-kepengurusan .all-profile a {
+    font-size: 0.875rem; /* Mengurangi ukuran font tombol */
+    padding: 6px 30px; /* Mengurangi padding tombol */
+    right: 20px; /* Memindahkan tombol lebih dekat ke tepi kanan */
+  }
+
+  /* Container for profile description */
+  .desc-struktur {
+    padding: 15px; 
+    margin: 10px; /* Mengurangi jarak antar item */
+  }
+
+  /* Image styling */
+  .desc-struktur img {
+    width: 120px; /* Mengurangi ukuran gambar */
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Name styling */
+  .desc-struktur h1 {
+    font-size: 14px; /* Mengurangi ukuran font nama */
+    margin-bottom: 8px;
+  }
+
+  /* Job title styling */
+  .desc-struktur .job {
+    font-size: 10px; /* Mengurangi ukuran font job title */
+    margin-bottom: 20px;
+  }
+
+  /* Button styling */
+  .desc-struktur a {
+    width: 150px; /* Mengurangi lebar tombol */
+    height: 30px; /* Mengurangi tinggi tombol */
+    font-size: 0.75rem; /* Mengurangi ukuran font tombol */
+    margin-bottom: 20px; /* Mengurangi margin bawah */
+  }
+}
+
 
 .struckture-page {
   padding: 20px;
@@ -318,6 +374,38 @@ body{
   gap: 20px; /* Jarak antar kolom */
 }
 
+/* Untuk layar dengan lebar maksimal 768px (tablet portrait) */
+@media (max-width: 768px) {
+  .structure-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  }
+
+  .struckture-title h2 {
+    font-size: 20px;
+  }
+
+  .structure-list {
+    gap: 0px; /* Jarak antar kolom */
+  }
+  
+  
+}
+
+/* Untuk layar dengan lebar maksimal 480px (ponsel) */
+@media (max-width: 480px) {
+  .structure-list {
+    grid-template-columns: repeat(2, 1fr); /* 1 kolom */
+  }
+
+  .structure-btn-back a {
+    font-size: 20px; /* Mengurangi ukuran font untuk tombol kembali */
+  }
+
+  .struckture-title h2 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
 
 
 
@@ -415,11 +503,15 @@ body{
 /* Responsif untuk perangkat lebih kecil */
 @media (max-width: 768px) {
   .program-kerja h1 {
-      font-size: 2rem;
+      font-size: 20px;
+  }
+
+  .program-kerja .card {
+    width: 90%;
   }
 
   .program-kerja .card h2 {
-      font-size: 1.25rem;
+      font-size: 1rem;
   }
 
   .program-kerja .card button {
@@ -428,14 +520,59 @@ body{
   }
 
   .program-kerja .card img {
-    width: 243px; /* Mengatur lebar gambar */
-    height: 210px; /* Mengatur tinggi gambar */
+    width: 230px; /* Mengatur lebar gambar */
+    height: 160px; /* Mengatur tinggi gambar */
     object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak rasio aspek */
     border-radius: 8px;
     margin-bottom: 15px;
   }
-
 }
+
+/* Responsive Styling untuk layar maksimal 480px */
+@media (max-width: 480px) {
+  /* Styling untuk judul */
+  .program-kerja h1 {
+    font-size: 20px; /* Mengurangi ukuran font judul */
+  }
+
+  /* Styling untuk card dalam carousel */
+  .program-kerja .card {
+    grid-template-columns: repeat(2, 1fr); /* 1 kolom */
+  }
+
+  /* Styling untuk gambar dalam card */
+  .program-kerja .card img {
+    width: 100%; /* Gambar mengisi lebar card */
+    height: 100px; /* Mengatur tinggi otomatis agar proporsional */
+  }
+
+  .program-kerja .card h2 {
+    font-size: 14px;
+}
+
+  /* Styling untuk tombol */
+  .program-kerja .card button {
+    width: 80%; /* Tombol mengisi lebar card */
+    height: 30px; /* Mengatur tinggi tombol sedikit lebih besar */
+    font-size: 10px; /* Mengatur ukuran font tombol */
+  }
+
+  /* Styling untuk deskripsi waktu */
+  .program-kerja .Desc-time, .program-kerja .Desc-location {
+    flex-direction: row; /* Mengatur deskripsi menjadi kolom untuk lebih baik di layar kecil */
+    align-items: flex-start; /* Mengatur align ke kiri */
+    padding-left: 10px; /* Mengurangi padding untuk ruang lebih */
+    padding-right: 10px; /* Mengurangi padding untuk ruang lebih */
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .program-kerja .Desc-time p, .program-kerja .Desc-location p {
+    font-size: 0.7rem; /* Mengurangi ukuran font deskripsi */
+  }
+}
+
 
 
 .pendaftaran-body {
@@ -489,6 +626,25 @@ body{
 /* .pendaftaran-desc a:hover {
   background-color: #0056b3;
 } */
+
+/* Untuk layar dengan lebar 768px atau lebih kecil */
+@media (max-width: 768px) {
+  .pendaftaran-body h1 {
+    font-size: 20px; /* Mengurangi ukuran font judul */
+    margin-bottom: 40px;
+  }
+
+  .pendaftaran-desc {
+    font-size: 15px; /* Mengurangi ukuran font deskripsi */
+    max-width: 70%; /* Menambah ruang pada layar lebih kecil */
+  }
+
+  .pendaftaran-desc a {
+    padding: 6px 30px; /* Mengurangi padding pada tombol */
+    font-size: 12px; /* Mengurangi ukuran font tombol */
+  }
+}
+
 
 /* Footer.css */
 .footer-page {
