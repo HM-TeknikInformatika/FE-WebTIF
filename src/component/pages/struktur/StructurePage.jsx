@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Product } from "../../../assets/structure/product";
 import { productData } from "../../../assets/structure/data";
+import { Footer } from "../../footer";
 
 export const StructurePage = () => {
+    // Scroll ke atas saat komponen di-mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className="struckture-page">
@@ -29,6 +35,7 @@ export const StructurePage = () => {
                     ))}
                 </div>
             </div>
+            <div><Footer /></div>
         </>
     );
 };

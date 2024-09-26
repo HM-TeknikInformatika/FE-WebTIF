@@ -8,8 +8,9 @@ export const Navbar = () => {
 
 
     return (
-            <nav className="">
-            <Link to="/">
+            <div className="navbar-section">
+                <nav className="container">
+            <Link to="/" className="">
                 <a href="">
                     <img src={iconImage} alt="Logo" />
                     <p>HM TIF <br />UNISSULA</p>
@@ -38,5 +39,6 @@ export const Navbar = () => {
                 </li>
             </ul>
         </nav>
+            </div>
     );
 };

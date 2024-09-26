@@ -1,10 +1,13 @@
 /* Navbar CSS */
+
+.navbar-section{
+    background-color: #003399;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003399;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0rem;
     position: sticky; /* Ganti position menjadi sticky */
     top: 0; /* Menempel di bagian atas halaman */
     z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
@@ -21,12 +24,15 @@ nav a {
 nav img {
     height: 40px;
     width: auto;
-    margin-left: 5.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7px;
+    /* margin-left: 5.5rem; */
 }
 
 nav p {
     margin: 0;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
@@ -76,7 +82,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     margin-left: 0;
-    margin-right: 5.5rem;
+    /* margin-right: 5.5rem; */
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
