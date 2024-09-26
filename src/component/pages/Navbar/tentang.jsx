@@ -1,8 +1,10 @@
 import bg from "../../../../public/assets/img/ProfileBackground.svg";
 import image from "../../../../public/assets/img/ImageProfile.svg";
+import { Footer } from "../../footer";
 
 export const Tentang = () => {
   return (
+    <>
     <div
       style={{
         backgroundImage: `url(${bg})`,
@@ -62,5 +64,7 @@ export const Tentang = () => {
         </div>
       </div>
     </div>
+    <div><Footer /></div>
+    </>
   );
 };

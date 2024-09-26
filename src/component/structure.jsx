@@ -5,9 +5,10 @@ import "react-multi-carousel/lib/styles.css";
 import { Product } from "../assets/structure/product";
 import { productData, responsive } from "../assets/structure/data";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export const Structure = () => {
-    const product = productData.map(item => (
+    const product = productData.slice(0, 4).map(item => (
         <Product
             name={item.name}
             img={item.image}
@@ -23,7 +24,7 @@ export const Structure = () => {
                 {product}
             </Carousel>
             <div className="all-profile">
-                <button>Lihat Selengkapnya <FaArrowUpRightFromSquare /></button>
+                <Link to="/StructurePage">Lihat Selengkapnya <FaArrowUpRightFromSquare /></Link>
             </div>
         </div>
         </div>

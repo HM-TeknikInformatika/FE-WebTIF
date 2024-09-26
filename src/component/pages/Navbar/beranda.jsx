@@ -9,6 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Proker } from "../../proker";
 import { Structure } from "../../structure";
+import { Artikel } from "../../artikel";
+import { Pendaftaran } from "../../pendaftaran";
+import { Footer } from "../../footer";
 
 
 export const Beranda = () => {
@@ -57,6 +60,9 @@ export const Beranda = () => {
 
             <div><Structure /></div>
             <div><Proker /></div>
+            <div><Artikel /></div>
+            <div><Pendaftaran /></div>
+            <div><Footer /></div>
 
         </div>
     );

@@ -171,7 +171,7 @@ body{
 }
 
 /* Styling untuk tombol */
-.struktur-kepengurusan .all-profile button {
+.struktur-kepengurusan .all-profile a {
   font-size: 1rem;
   padding: 7px 40px;
   color: #003399;
@@ -182,12 +182,13 @@ body{
   transition: background-color 0.3s ease;
   margin-bottom: 50px;
   border: 1px solid #003399;
+  text-decoration: none;
   position: absolute; /* Ubah posisi button menjadi absolute */
   right: 100px; /* Posisikan button 20px dari kanan container */
 }
 
 /* Hover effect untuk tombol */
-.struktur-kepengurusan button:hover {
+.struktur-kepengurusan a:hover {
   background-color: #e8e8e8;
 }
 
@@ -231,7 +232,7 @@ body{
 }
 
 /* Button styling */
-.desc-struktur button {
+.desc-struktur a {
   width: 180px; /* Menentukan lebar tombol */
   height: 35px; /* Menentukan tinggi tombol */
   font-size: 0.875rem; /* Mengurangi ukuran font */
@@ -248,7 +249,7 @@ body{
   /* font-weight: bold; */
 }
 
-.desc-struktur button:hover {
+.desc-struktur a:hover {
   background-color: #fff;
 }
 
@@ -263,7 +264,7 @@ body{
     margin-bottom: 15px;
   }
 
-  .struktur-kepengurusan button {
+  .struktur-kepengurusan a {
     font-size: 0.7rem;
     padding: 8px 16px;
     margin-bottom: 15px;
@@ -290,11 +291,35 @@ body{
     margin-bottom: 10px;
   }
 
-  .desc-struktur button {
+  .desc-struktur a {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
 }
+
+.struckture-page {
+  padding: 20px;
+}
+
+.structure-btn-back a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.struckture-title h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.structure-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 20px; /* Jarak antar kolom */
+}
+
+
+
 
 /* Styling untuk container program-kerja */
 .program-kerja {
@@ -322,6 +347,7 @@ body{
   /* padding: 15px; */
   /* text-align: center; */
   transition: transform 0.3s ease;
+  margin-bottom: 2px;
 }
 
 /* Hover effect untuk card */
@@ -409,4 +435,171 @@ body{
     margin-bottom: 15px;
   }
 
+}
+
+
+.pendaftaran-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #0064E5;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+  color: #fff;
+  /* opacity: 85%; */
+  margin-top: 50px;
+}
+
+.pendaftaran-body h1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.pendaftaran-desc {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 70%;
+}
+
+.pendaftaran-desc p {
+  margin-bottom: 20px;
+}
+
+.pendaftaran-desc a {
+  display: inline-block;
+  padding: 6px 35px;
+  background-color: #fff;
+  color: #003399;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 1px solid #003399;
+}
+
+/* .pendaftaran-desc a:hover {
+  background-color: #0056b3;
+} */
+
+/* Footer.css */
+.footer-page {
+  background-color: #003399; /* Warna latar belakang footer */
+  color: white; /* Warna teks */
+  padding: 50px 0; /* Jarak atas dan bawah */
+  /* text-align: center; */
+  width: 100%; /* Memastikan footer lebar penuh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between; /* Memisahkan logo dan sosmed */
+  align-items: center;
+  flex-wrap: wrap; /* Elemen membungkus jika layar kecil */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.footer-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-image img {
+  width: 20%; /* Ukuran logo */
+  margin-bottom: 10px; /* Jarak bawah antara logo dan nama */
+}
+
+.footer-image h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.social-media {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.social-media a {
+  color: white; /* Warna ikon sosial media */
+  font-size: 36px; /* Ukuran ikon */
+  margin: 0 10px; /* Jarak antar ikon */
+  transition: color 0.3s ease;
+}
+/* Warna spesifik untuk setiap sosial media */
+.social-media .whatsapp {
+  color: #25d366; /* Warna hijau WhatsApp */
+}
+
+.social-media .whatsapp:hover {
+  color: #128c7e; /* Warna hijau lebih gelap saat di-hover */
+}
+
+.social-media .tiktok {
+  color: #000; /* Warna hitam TikTok */
+}
+
+.social-media .tiktok:hover {
+  color: #ff0050; /* Warna merah TikTok saat di-hover */
+}
+
+.social-media .instagram {
+  color: #e4405f; /* Warna pink Instagram */
+}
+
+.social-media .instagram:hover {
+  color: #c13584; /* Warna lebih gelap saat di-hover */
+}
+
+.social-media .youtube {
+  color: #FF0000; /* Warna merah YouTube */
+}
+
+.social-media .youtube:hover {
+  color: #cc0000; /* Warna lebih gelap saat di-hover */
+}
+
+.copyright-body {
+  margin-top: 40px; /* Jarak dari footer-body */
+  padding-top: 60px; /* Jarak dari footer-body */
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* Warna hak cipta */
+  text-align: center;
+  border-top: 2px solid #fff;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .footer-body {
+      flex-direction: column; /* Susun vertikal di layar kecil */
+  }
+
+  .social-media {
+      flex-direction: row; /* Ikon sosial media disusun horizontal */
+      margin-top: 15px;
+  }
+
+  .social-media a {
+      margin: 5px; /* Jarak antar ikon di layar kecil */
+  }
 }

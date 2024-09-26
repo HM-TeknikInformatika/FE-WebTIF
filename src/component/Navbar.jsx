@@ -12,7 +12,7 @@ export const Navbar = () => {
             <Link to="/">
                 <a href="">
                     <img src={iconImage} alt="Logo" />
-                    <p>HM TIF <br /> UNISSULA</p>
+                    <p>HM TIF <br />UNISSULA</p>
                 </a>
             </Link>
             <div className="menu" onClick={() => { setMenuOpen(!menuOpen); }}>

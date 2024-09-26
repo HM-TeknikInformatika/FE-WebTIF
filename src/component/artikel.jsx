@@ -5,26 +5,17 @@ import "react-multi-carousel/lib/styles.css";
 import { Product } from "../assets/proker/product";
 import { productData, responsive } from "../assets/proker/data";
 
-export const Proker = () => {
+export const Artikel = () => {
     // Filter hanya produk dengan status false
-    const filteredProductData = productData.filter(item => item.status === true);
-
-    // Map data yang sudah difilter ke dalam komponen Product
-    const product = filteredProductData.map((item) => (
-        <Product
-            key={item.id} // Tambahkan key yang unik
-            name={item.name}
-            image={item.Image}
-            time={item.descTime}
-            location={item.descLocation}
-        />
-    ));
+    const filteredProductData = productData.filter(item => item.status === false);
 
     return (
         <div className="program-kerja container">
-            <h1>Program Kerja 2023 - 2024</h1>
+            <h1>Artikel 2023 - 2024</h1>
+
+            {/* Cek apakah ada produk yang sesuai, jika tidak ada tampilkan pesan */}
             {filteredProductData.length === 0 ? (
-                <p>Belum ada program kerja...</p>
+                <p>Belum ada artikel...</p>
             ) : (
                 <Carousel 
                     responsive={responsive}
@@ -32,7 +23,15 @@ export const Proker = () => {
                     autoPlaySpeed={4000}
                     infinite={true}
                 >
-                    {product}
+                    {filteredProductData.map((item) => (
+                        <Product
+                            key={item.id} // Tambahkan key yang unik
+                            name={item.name}
+                            image={item.Image}
+                            time={item.descTime}
+                            location={item.descLocation}
+                        />
+                    ))}
                 </Carousel>
             )}
         </div>
