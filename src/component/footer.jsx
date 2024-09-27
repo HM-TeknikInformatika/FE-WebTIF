@@ -1,4 +1,3 @@
-import React from "react";
 import { FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import footerImage from "/public/assets/img/Logo.png"
 
