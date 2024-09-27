@@ -1,4 +1,3 @@
-import React from "react";
 import "/src/App.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -6,15 +5,16 @@ import { Product } from "../assets/proker/product";
 import { productData, responsive } from "../assets/proker/data";
 
 export const Proker = () => {
-    // Filter hanya produk dengan status false
+    // Filter hanya produk dengan status true
     const filteredProductData = productData.filter(item => item.status === true);
 
     // Map data yang sudah difilter ke dalam komponen Product
     const product = filteredProductData.map((item) => (
         <Product
             key={item.id} // Tambahkan key yang unik
+            id={item.id} // Pastikan menambahkan id untuk navigasi
             name={item.name}
-            image={item.Image}
+            img={item.image} // Pastikan ini sesuai dengan property gambar
             time={item.descTime}
             location={item.descLocation}
         />

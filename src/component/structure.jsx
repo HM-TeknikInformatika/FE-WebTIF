@@ -1,4 +1,3 @@
-import React from "react";
 import "/src/App.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -10,6 +9,7 @@ import { Link } from "react-router-dom";
 export const Structure = () => {
     const product = productData.slice(0, 4).map(item => (
         <Product
+        key={item.id}
             name={item.name}
             img={item.image}
             job={item.job}

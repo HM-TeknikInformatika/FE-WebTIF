@@ -1,4 +1,3 @@
-import React from "react";
 import defaultImage from "../../../public/assets/img/Logo.png";
 
 export const Product = (props) => {

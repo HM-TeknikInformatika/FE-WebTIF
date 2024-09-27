@@ -573,6 +573,113 @@ body{
   }
 }
 
+/* ProkerPage.css */
+
+.proker-page {
+  padding: 20px;
+}
+
+.proker-btn-back {
+  margin-bottom: 20px;
+}
+
+.proker-btn-back a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.proker-body {
+  margin-top: 90px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  /* text-align: center; */
+}
+
+.proker-img img {
+  width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Sesuaikan tinggi gambar */
+  border-radius: 10px; /* Sudut melengkung pada gambar */
+  margin-bottom: 20px; /* Ruang di bawah gambar */
+    text-align: center;
+
+}
+
+.proker-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+    text-align: center;
+  margin-bottom: 50px; /* Ruang di bawah judul */
+}
+
+.proker-desc {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Ruang di bawah deskripsi */
+}
+
+.proker-time,
+.proker-location {
+    display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.proker-time p, .proker-location p {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .proker-btn-back a {
+      font-size: 20px; /* Kecilkan ukuran font untuk tombol kembali */
+  }
+  .proker-body {
+      margin-top: 30px; /* Mengurangi margin atas untuk layar lebih kecil */
+  }
+  .proker-title {
+    margin-bottom: 25px; /* Ruang di bawah judul */
+      font-size: 20px; /* Kecilkan ukuran font judul untuk layar kecil */
+  }
+  .proker-desc {
+      font-size: 16px; /* Kecilkan ukuran font deskripsi untuk layar kecil */
+  }
+  .proker-time,
+  .proker-location {
+      font-size: 13px; /* Kecilkan ukuran font waktu dan lokasi untuk layar kecil */
+  }
+
+  .proker-time p,
+  .proker-location p {
+      font-size: 12px; /* Kecilkan ukuran font waktu dan lokasi untuk layar kecil */
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proker-btn-back a {
+      font-size: 18px; /* Kecilkan ukuran font untuk tombol kembali */
+  }
+  .proker-body {
+      padding: 5px; /* Mengurangi padding untuk layar ponsel kecil */
+      align-items: flex-start; /* Rata kiri untuk tampilan lebih baik */
+      text-align: left; /* Teks rata kiri untuk tampilan lebih baik */
+  }
+  .proker-title {
+      font-size: 16px; /* Ukuran font judul lebih kecil untuk layar ponsel kecil */
+  }
+  .proker-desc {
+      font-size: 12px; /* Ukuran font deskripsi lebih kecil untuk layar ponsel kecil */
+  }
+  .proker-time,
+  .proker-location {
+      font-size: 10px; /* Kecilkan ukuran font waktu dan lokasi untuk layar ponsel kecil */
+  }
+}
 
 
 .pendaftaran-body {
