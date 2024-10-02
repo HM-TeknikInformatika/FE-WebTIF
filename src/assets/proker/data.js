@@ -29,7 +29,7 @@ export const productData = [
         descTime: "1 Januari 2024",
         descLocation: "Gedung FTI Unissula",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        status: true,
+        status: true
     },
     {
         id: 2,

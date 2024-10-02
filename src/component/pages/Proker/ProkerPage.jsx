@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import defaultImage from "../../../../public/assets/img/Logo.png";
 import { productData } from "../../../assets/proker/data";
 import { useEffect } from "react";
+import { Footer } from "../../footer";
 
 
 export const ProkerPage = () => {
@@ -19,6 +20,7 @@ export const ProkerPage = () => {
     console.log("ID from URL: ", id);
 
     return (
+        <>
         <div className="proker-page container">
             <div className="proker-btn-back container">
                 <a onClick={() => navigate(-1)}>
@@ -56,5 +58,7 @@ export const ProkerPage = () => {
                 <p>Data tidak ditemukan</p> // Tampilkan pesan jika produk tidak ditemukan
             )}
         </div>
+        <div><Footer /></div>
+        </>
     );
 };

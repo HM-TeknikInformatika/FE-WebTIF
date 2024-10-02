@@ -32,9 +32,9 @@ export const Navbar = () => {
                     <li>
                         <NavLink to="/program" onClick={handleMenuClick}>Program Kerja</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/pendaftaran" onClick={handleMenuClick}>Pendaftaran</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink to="/kontak" onClick={handleMenuClick}>Kontak</NavLink>
                     </li>

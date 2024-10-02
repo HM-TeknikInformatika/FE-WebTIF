@@ -1,22 +1,50 @@
+import { useEffect } from "react";
+import { FaArrowLeft } from "react-icons/fa6";
 import { Footer } from "../../footer";
+import { Product } from "../../../assets/proker/product";
+import { productData } from "../../../assets/proker/data"; // Pastikan untuk mengimpor data produk
 
 export const Program = () => {
+    // Scroll ke atas saat komponen di-mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
+            <div className="proker-page container">
+                {/* Tombol Back */}
+                <div className="proker-btn-back">
+                    <a href="/">
+                        <FaArrowLeft />
+                    </a>
+                </div>
+                
+                {/* Judul Halaman */}
+                <div className="proker-title">
+                    <h2>Program Kerja HM TIF 2023 - 2024</h2>
+                </div>
+                
+                {/* Tampilkan data produk dalam bentuk grid */}
+                <div className="proker-list">
+                    {productData.length === 0 ? (
+                        <p>Belum ada program kerja...</p>
+                    ) : (
+                        productData.map((item) => (
+                            <Product
+                                key={item.id} // Tambahkan key yang unik
+                                id={item.id} // Pastikan menambahkan id untuk navigasi
+                                name={item.name}
+                                img={item.image} // Pastikan ini sesuai dengan property gambar
+                                time={item.descTime}
+                                location={item.descLocation}
+                            />
+                        ))
+                    )}
+                </div>
             </div>
-            <br /><div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
-            </div>
-            <br /><div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
-            </div>
-            <br /><div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
-            </div>
-            <br />
-            <div><Footer /></div>
+            
+            <Footer />
         </>
     );
 };

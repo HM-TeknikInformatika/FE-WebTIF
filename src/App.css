@@ -866,3 +866,91 @@ body{
       margin: 5px; /* Jarak antar ikon di layar kecil */
   }
 }
+
+.proker-page {
+  padding: 20px;
+  margin-bottom: 90px;
+}
+
+.proker-btn-back {
+  margin-bottom: 20px;
+}
+
+.proker-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.proker-list {
+  background-color: #ffffff;
+  /* border-radius: 15px; */
+  /* border: 1px solid #ddd; */
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom untuk desktop */
+  gap: 20px;
+  /* transition: box-shadow 0.3s ease; */
+}
+
+.proker-list img {
+  width: 100%;
+  height: 230px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.proker-list h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.proker-list p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.proker-list .Desc-time, 
+.proker-list .Desc-location {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.proker-list .Desc-time p, .proker-list .Desc-location p {
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+
+.proker-list button {
+  width: 180px;
+  height: 35px;
+  font-size: 0.875rem;
+  color: #003399;
+  background-color: white;
+  border: 2px solid #003399;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 25px auto; /* Margin atas dan bawah 25px, margin kiri dan kanan otomatis untuk centering */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Rata tengah secara horizontal */
+  align-items: center; /* Rata tengah secara vertikal */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Tambahkan gaya ini untuk membungkus elemen yang mencakup tombol */
+.proker-list .button-wrapper {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: center; /* Rata tengah horizontal */
+  margin: 20px 0; /* Jarak vertikal di atas dan bawah tombol */
+}
+
+.proker-list button:hover {
+  background-color: #e8e8e8;
+}

@@ -1,5 +1,5 @@
 export * from "./beranda"
 export * from "./tentang"
 export * from "./program"
-export * from "./pendaftaran"
+// export * from "./pendaftaran"
 export * from "./kontak"
