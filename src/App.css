@@ -922,8 +922,10 @@ body{
   padding-right: 20px;
 }
 
-.proker-list .Desc-time p, .proker-list .Desc-location p {
+.proker-list .Desc-time p, 
+.proker-list .Desc-location p {
   margin-left: 5px;
+  /* margin-top: 5px; */
   font-size: 0.9rem;
 }
 
@@ -953,4 +955,81 @@ body{
 
 .proker-list button:hover {
   background-color: #e8e8e8;
+}
+
+/* Responsif untuk layar 768px */
+@media (max-width: 768px) {
+  .proker-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+  }
+
+  .proker-title h2 {
+    font-size: 20px; /* Mengurangi ukuran font untuk judul */
+  }
+
+  .proker-list img {
+    width: 100%;
+    height: 160px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .proker-list h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .proker-list p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .proker-list .Desc-time p, 
+.proker-list .Desc-location p {
+  font-size: 0.85rem;
+}
+
+  .proker-list button {
+    width: 150px; /* Ukuran tombol lebih kecil */
+  }
+}
+
+/* Responsif untuk layar 480px */
+@media (max-width: 480px) {
+  .proker-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk ponsel */
+  }
+
+  .proker-title h2 {
+    font-size: 16px; /* Mengurangi ukuran font lebih lanjut */
+  }
+
+  .proker-list img {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .proker-list h2 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .proker-list p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .proker-list .Desc-time p, 
+.proker-list .Desc-location p {
+  font-size: 0.7rem;
+}
+
+  .proker-list button {
+    font-size: 10px;
+    width: 80%; /* Tombol mengambil lebar penuh */
+  }
 }

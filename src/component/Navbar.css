@@ -105,31 +105,30 @@ nav ul li a:hover {
 }
 
 /* Responsiveness */
+/* Responsiveness */
 @media (max-width: 768px) {
     .menu {
         display: flex;
     }
 
-    nav img {
-        margin: 0;
-    }
-
     nav ul {
-        display: none;
+        display: flex; /* Ganti display menjadi flex untuk animasi */
         flex-direction: column;
         width: 100%;
         background-color: #003399;
         position: absolute;
         top: 60px;
         left: 0;
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Tambah transisi untuk opacity */
         overflow: hidden;
         max-height: 0;
+        opacity: 0; /* Awalnya tidak terlihat */
     }
 
     nav ul.open {
-        display: flex;
+        margin-top: 21px;
         max-height: 500px; /* Adjust based on menu height */
+        opacity: 1; /* Menjadi terlihat saat terbuka */
     }
 
     nav ul li {
