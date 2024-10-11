@@ -4,6 +4,7 @@ import { Navbar } from './component/Navbar';
 import { Beranda, Tentang, Program, Kontak } from './component/pages/Navbar';
 import { StructurePage } from './component/pages/struktur/StructurePage';
 import { ProkerPage } from './component/pages/Proker/ProkerPage';
+import { VisiMisi } from './component/pages/Navbar/visiMisi';
 
 function App() {
     return (
@@ -12,7 +13,8 @@ function App() {
             <main> {/* Menggunakan elemen main untuk konten utama */}
                 <Routes>
                     <Route path="/" element={<Beranda />} />
-                    <Route path="/tentang" element={<Tentang />} />
+                    <Route path="/tentang/sejarah" element={<Tentang />} />
+                    <Route path="/tentang/visi-misi" element={<VisiMisi />} />
                     <Route path="/program" element={<Program />} />
                     {/* <Route path="/pendaftaran" element={<Pendaftaran />} /> */}
                     <Route path="/kontak" element={<Kontak />} />
