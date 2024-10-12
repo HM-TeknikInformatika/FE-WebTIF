@@ -14,6 +14,9 @@ import { Footer } from "../../footer";
 
 
 export const Beranda = () => {
+    const handleClick = () => {
+        window.location.href = 'https://www.instagram.com/hmtif_unissula/';
+    };
     return (
         <div className="homepage">
             <header className="header-box">
@@ -54,7 +57,7 @@ export const Beranda = () => {
 
             <div className="Desc-SocialMedia">
                 <h1 className="container">Tetap terhubung platform sosial media kami. Lihat postingan terbaru, berikan umpan balik, dan jadilah bagian dari komunitas kami.</h1>
-                <button>Lihat Selengkapnya <FaArrowUpRightFromSquare /></button>
+                <button onClick={handleClick}>Lihat Selengkapnya <FaArrowUpRightFromSquare /></button>
             </div>
 
             <div><Structure /></div>

@@ -1,15 +1,55 @@
+import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
 import { Footer } from "../../footer";
 
 export const Kontak = () => {
     return (
         <>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
+            <div className="container">
+                <h2 className="kontak-page-title">Kontak Kami</h2>
+                <div className="kontak-page-body">
+                    <table>
+                        <tr>
+                            <th>
+                                <FaLocationDot />                            </th>
+                            <th>
+                                <FaPhoneFlip />
+                            </th>
+                            <th>
+                                <IoMdMail />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Alamat
+                            </td>
+                            <td>
+                                Kontak
+                            </td>
+                            <td>
+                                Email
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">
+                                    Semarang, Jawa Tengah
+                                </a>
+                            </td>
+                            <td>
+                                <a href="">
+                                    08XXXXX
+                                </a>
+                            </td>
+                            <td>
+                                <a href="">
+                                    email@gmail.com
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <br /><div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci sapiente minima iusto pariatur qui illum dolore, tempora at quos! Corporis asperiores voluptate praesentium, quod doloremque odit ipsam, sint ut culpa velit, molestias reprehenderit nostrum veniam hic delectus harum eos doloribus. Quis aspernatur, assumenda repellendus illum animi iure culpa reprehenderit error molestias tempora sint dolorum ab libero reiciendis numquam provident eveniet eos voluptas minus voluptates earum. Eius dolorum, facere minus, aliquam repellat ipsum cumque necessitatibus officia at cupiditate provident atque ipsam maxime praesentium nam corrupti dolor possimus velit natus sunt sapiente voluptate? Natus, nobis placeat? Quam ratione provident dignissimos sunt.
-            </div>
-            <br />
             <div><Footer /></div>
         </>
     );

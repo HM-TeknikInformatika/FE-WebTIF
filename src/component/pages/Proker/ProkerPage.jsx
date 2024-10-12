@@ -52,6 +52,11 @@ export const ProkerPage = () => {
                                 {product.description}
                             </p>
                         </div>
+                        <div className="proker-desc">
+                            <p>
+                                {product.description2}
+                            </p>
+                        </div>
                     </div>
                 </div>
             ) : (

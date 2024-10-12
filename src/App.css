@@ -1033,3 +1033,52 @@ body{
     width: 80%; /* Tombol mengambil lebar penuh */
   }
 }
+
+.kontak-page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(0, 51, 153);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.kontak-page-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.kontak-page-body table {
+  width: 100%;
+  /* max-width: 800px; */
+  border-collapse: collapse;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  /* background-color: #f9f9f9; */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+}
+
+.kontak-page-body th, 
+.kontak-page-body td {
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.kontak-page-body th {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #555;
+  /* background-color: #f0f0f0; */
+}
+
+.kontak-page-body a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.kontak-page-body a:hover {
+  color: #0056b3;
+}

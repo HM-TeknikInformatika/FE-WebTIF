@@ -16,16 +16,16 @@ export const Footer = () => {
                     </div>
                     <div className="social-media">
                         <p>Sosial media Kami</p>
-                        <a className="whatsapp" href="">
+                        <a className="whatsapp" href="https://wa.me/6285601157055" target="_blank">
                         <FaWhatsapp />
                         </a>
-                        <a className="tiktok" href="">
+                        <a className="tiktok" href="https://www.tiktok.com/@hm_tifunissula?is_from_webapp=1&sender_device=pc">
                             <FaTiktok />
                         </a>
-                        <a className="instagram" href="">
+                        <a className="instagram" href="https://www.instagram.com/hmtif_unissula/">
                             <FaInstagram />
                         </a>
-                        <a className="youtube" href="">
+                        <a className="youtube" href="https://www.youtube.com/@hmtifunissula">
                             <FaYoutube />
                         </a>
                     </div>

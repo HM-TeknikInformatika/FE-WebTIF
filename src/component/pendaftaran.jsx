@@ -7,7 +7,7 @@ export const Pendaftaran = () => {
                 <div className="pendaftaran-desc">
                     <p>Mari ikut berkontribusi memajukan program studi Teknik Informatika bersama HM TIF Unissula. Yuk buruan daftar
                     </p>
-                    <a href="">Info Selanjutnya</a>
+                    <a href="https://www.instagram.com/hmtif_unissula/">Info Selanjutnya</a>
                 </div>
             </div>
         </>
