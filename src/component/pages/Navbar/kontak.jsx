@@ -32,18 +32,18 @@ export const Kontak = () => {
                         </tr>
                         <tr>
                             <td>
-                                <a href="">
+                                <a className="address" href="https://maps.app.goo.gl/pgPNZfC2NkQozUzS8" target="_blank">
                                     Semarang, Jawa Tengah
                                 </a>
                             </td>
                             <td>
-                                <a href="">
-                                    08XXXXX
+                                <a className="whatsapp" href="https://wa.me/6285601157055" target="_blank">
+                                    085601157055
                                 </a>
                             </td>
                             <td>
-                                <a href="">
-                                    email@gmail.com
+                                <a href="mailto:hmj.informatika@unissula.ac.id">
+                                    hmj.informatika@unissula.ac.id
                                 </a>
                             </td>
                         </tr>

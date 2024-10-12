@@ -1076,3 +1076,99 @@ body{
     margin-bottom: 20px;
   }
 }
+
+/* Style Umum */
+.kontak-page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.kontak-page-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.kontak-page-body table {
+  width: 100%;
+}
+
+.kontak-page-body th,
+.kontak-page-body td {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.kontak-page-body th {
+  font-size: 1.5rem;
+}
+
+.kontak-page-body td {
+  font-size: 1.3rem;
+}
+
+.kontak-page-body a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.kontak-page-body a:hover {
+  color: #0056b3;
+}
+
+.kontak-page-body svg {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Style untuk Layar Lebih Kecil (Tablet dan Smartphone) */
+@media (max-width: 768px) {
+  .kontak-page-title {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  .kontak-page-body {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .kontak-page-body table {
+    width: 100%;
+    /* margin: 0 auto; */
+  }
+
+  .kontak-page-body th,
+  .kontak-page-body td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .kontak-page-body svg {
+    font-size: 1.5rem;
+  }
+}
+
+/* Style untuk Layar Sangat Kecil (Smartphone) */
+@media (max-width: 480px) {
+  .kontak-page-title {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .kontak-page-body th,
+  .kontak-page-body td {
+    font-size: 0.6rem;
+    font-weight: bold;
+    /* padding: 6px; */
+  }
+
+  .kontak-page-body svg {
+    font-size: 1.2rem;
+  }
+}
