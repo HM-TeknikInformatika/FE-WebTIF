@@ -22,7 +22,7 @@ export const responsive = {
 };
 
 export const productData = [
-    { image: "/assets/img/Struktur/BPH/Ageng.webp", name: "A. Ageng Afrizal", job: "Ketua Himpunan" },
+    { image: "/assets/img/Struktur/BPH/Ageng2.webp", name: "A. Ageng Afrizal", job: "Ketua Himpunan" },
     { image: "/assets/img/Struktur/BPH/Iko.webp", name: "M. Iko Wardhana", job: "Wakil Ketua Himpunan" },
     { image: "/assets/img/Struktur/BPH/Naila.webp", name: "Nailatul Fitriani A.J.", job: "Sekretaris I" },
     { image: "/assets/img/Struktur/BPH/Farras.webp", name: "Natasha Farras N.", job: "Bendahara I" },
