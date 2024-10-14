@@ -24,16 +24,16 @@ export const responsive = {
 export const productData = [
     {
         id: 1,
-        image: "/public/assets/img/Hero1.jpeg",
+        image: "/assets/img/Proker/Oprec.webp",
         name: "Open Recruitment",
         descTime: "29 November 2023",
         descLocation: "Gedung FTI Unissula",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        description: "Open Recruitment merupakan acara yang rutin diselenggarakan oleh Himpunan Mahasiswa Teknik Informatika (HM-TIF) pada tahun ajaran baru untuk menyeleksi bagi mahasiswa dan mahasiswi yang ingin ikutserta dalam organisasi HM-TIF",
         status: true
     },
     {
         id: 2,
-        image: "",
+        image: "/assets/img/Proker/Fortech.webp",
         name: "Fortech Week",
         descTime: "20-21 Januari 2024",
         descLocation: "Gedung FTI Unissula",
@@ -43,7 +43,7 @@ export const productData = [
     },
     {
         id: 3,
-        image: "",
+        image: "/assets/img/Proker/IE.webp",
         name: "Informatics Event",
         descTime: "23 Juni 2024",
         descLocation: "Semier",
@@ -53,7 +53,7 @@ export const productData = [
     },
     {
         id: 4,
-        image: "",
+        image: "/assets/img/Proker/Jumkap.webp",
         name: "Jumpa Kaprodi",
         descTime: "12 Juli 2024",
         descLocation: "Gedung FTI Unissula",
@@ -62,7 +62,7 @@ export const productData = [
     },
     {
         id: 5,
-        image: "",
+        image: "/assets/img/Proker/Makrab.webp",
         name: "Makrab",
         descTime: "29-30 Januari 2024",
         descLocation: "Gedung FTI Unissula",
@@ -72,7 +72,7 @@ export const productData = [
     },
     {
         id: 6,
-        image: "",
+        image: "/assets/img/Proker/Stuband.webp",
         name: "Studi Banding",
         descTime: "31 Agustus 2024",
         descLocation: "Gedung FTI Unissula",
@@ -82,12 +82,21 @@ export const productData = [
     },
     {
         id: 7,
-        image: "",
+        image: "/assets/img/Proker/Pelatihan.webp",
         name: "Pelatihan AI",
         descTime: "23-25 September 2024",
         descLocation: "Gedung FTI Unissula",
         description: "Pelatihan adalah salah satu event yang diadakan oleh HM TIF UNISSULA yang bertujuan untuk mengasah dan mendalami skill akademik bagi mahasiswa, khususnya mahasiswa Teknik Informatika Unissula",
         description2: "Pelatihan ini dilaksanakan pada tanggal 23-25 September 2024, dengan Tema 'Pengenalan dan Kalsifikasi Objek dalam Citra Digital menggunakan Yolo'. Dari tema tersebut, pelatihan tahun ini merujuk pada Pelatihan Artificial Intelligence atau yang biasa kita kenal dengan sebutan AI",
+        status: true,
+    },
+    {
+        id: 8,
+        image: "",
+        name: "Seminar Nasional",
+        descTime: "TBA",
+        descLocation: "TBA",
+        description: "TBA",
         status: true,
     },
 ];

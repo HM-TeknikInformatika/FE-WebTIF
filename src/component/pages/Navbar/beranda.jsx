@@ -1,7 +1,7 @@
 import { Carousel } from "react-bootstrap";
-import heroImage1 from "/public/assets/img/Hero1.jpeg";
-import heroImage2 from "/public/assets/img/Hero2.jpeg";
-import heroImage3 from "/public/assets/img/Hero3.jpeg";
+import heroImage1 from "/public/assets/img/Hero1.png";
+import heroImage2 from "/public/assets/img/Hero2.png";
+import heroImage3 from "/public/assets/img/Hero3.png";
 import iconImage from "/public/assets/img/Logo.png";
 import "/src/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
