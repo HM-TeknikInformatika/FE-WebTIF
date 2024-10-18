@@ -1,4 +1,3 @@
-import "/src/App.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Product } from "../assets/proker/product";
